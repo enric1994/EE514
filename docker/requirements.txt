@@ -6,7 +6,7 @@
 numpy
 #scipy
 pandas
-#scikit-learn
+scikit-learn
 #matplotlib
 #seaborn
 #pyspark
