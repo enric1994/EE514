@@ -7,7 +7,7 @@ numpy
 #scipy
 pandas
 scikit-learn
-wordlcoud
+#wordlcoud
 nltk
 #matplotlib
 #seaborn
