@@ -12,8 +12,8 @@ services:
     environment:
       - PYTHONPATH=/code/src
       - DISPLAY=unix$DISPLAY
-    env_file:
-      - ../config/.env
+    # env_file:
+    #   - ../config/.env
     ports:
      - "8888:8888"
     volumes:
