@@ -7,6 +7,8 @@ numpy
 #scipy
 pandas
 scikit-learn
+wordlcoud
+nltk
 #matplotlib
 #seaborn
 #pyspark
