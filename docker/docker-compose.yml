@@ -12,8 +12,6 @@ services:
     environment:
       - PYTHONPATH=/code/src
       - DISPLAY=unix$DISPLAY
-    # env_file:
-    #   - ../config/.env
     ports:
      - "8888:8888"
     volumes:
@@ -21,14 +19,3 @@ services:
       - /tmp/.X11-unix:/tmp/.X11-unix
     runtime: nvidia
     command: tail /dev/null -f
-
-  tensorboard:
-    image: tensorflow/tensorflow:1.13.1-py3
-    container_name: tensorboard
-    working_dir: /logs
-    ports:
-     - "6006:6006"
-    volumes:
-      - ../logs:/logs
-    runtime: nvidia
-    command: tensorboard --logdir /logs
